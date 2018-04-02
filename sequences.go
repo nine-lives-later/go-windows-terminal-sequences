@@ -1,3 +1,5 @@
+// +build windows
+
 package sequences
 
 import (
@@ -26,7 +28,7 @@ func EnableVirtualTerminalProcessing(stream syscall.Handle, enable bool) error {
 	}
 
 	ret, _, err := setConsoleMode.Call(uintptr(unsafe.Pointer(stream)), uintptr(mode))
-	if ret != 0 {
+	if ret == 0 {
 		return err
 	}
 
