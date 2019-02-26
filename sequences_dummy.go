@@ -4,9 +4,8 @@ package sequences
 
 import (
 	"fmt"
-	"syscall"
 )
 
-func EnableVirtualTerminalProcessing(stream syscall.Handle, enable bool) error {
+func EnableVirtualTerminalProcessing(stream uintptr, enable bool) error {
 	return fmt.Errorf("windows only package")
 }
