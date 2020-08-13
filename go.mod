@@ -1,1 +1,1 @@
-module github.com/konsorten/go-windows-terminal-sequences
+module github.com/nine-lives-later/go-windows-terminal-sequences
