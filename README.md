@@ -10,7 +10,7 @@ See [Console Virtual Terminal Sequences](https://docs.microsoft.com/en-us/window
 import (
 	"syscall"
 	
-	sequences "github.com/konsorten/go-windows-terminal-sequences"
+	sequences "github.com/nine-lives-later/go-windows-terminal-sequences"
 )
 
 func main() {
